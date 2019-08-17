@@ -2,7 +2,7 @@
 // @name         DiscordNickHandler
 // @namespace    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordNickHandler.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordNickHandler.user.js
-// @version      0.0.12
+// @version      0.0.13
 // @description  Nick Change And Color
 // @author       Dana Meli
 // @icon         https://danamw.github.io/img/eyeball128.png

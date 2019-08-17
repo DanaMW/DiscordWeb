@@ -1,11 +1,10 @@
 // ==UserScript==
 // @name         DiscordSlideGuilds
-// @version      0.0.26
+// @version      0.0.27
 // @namespace    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
 // @description  Slides the channel, guildes and Member lists in and out on hover.
 // @author       Dana Meli
-// @author       narcolepticinsomniac
 // @author       Kosshi (Author of the betterdiscord version)
 // @icon         https://danamw.github.io/img/eyeball128.png
 // @include      /https?://discordapp\.com/channels/*/
