@@ -1,5 +1,5 @@
 ## Discord Stuff
-These were tested with and can be used with PowerShell Core 6.1.x to the latest.
+These were tested with and can be used with PowerShell Core 6.x.x to the latest.
 
 Add your webhook url to the file then...
 
