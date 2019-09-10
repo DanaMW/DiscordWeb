@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         DiscordSlideGuilds
-// @version      0.0.27
+// @version      0.0.28
 // @namespace    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
 // @description  Slides the channel, guildes and Member lists in and out on hover.
@@ -17,8 +17,7 @@ var injCSS = `/* CSS STUFF */
 div[class^=title][class*="container"] {
    z-index: 0;
 }
-body.reveal .wrapper-1Rf91z,
-body.reveal div[class^="wrapper"] div[class*="scrollerWrapPolyfill"] {
+body.reveal div[class*="wrapper"][class*="guilds"] {
     position: fixed;
     height: 100%;
     width: 70px;
@@ -29,9 +28,11 @@ body.reveal div[class^="wrapper"] div[class*="scrollerWrapPolyfill"] {
     -webkit-transition: left ease-in-out 300ms;
     transition: left ease-in-out 300ms;
 }
-body.reveal div[class^="channels"] {
+body.reveal div[class^="sidebar"] {
     position: fixed;
     height: 100%;
+    left: 0px;
+    margin-left: -70px;
     width: 240px;
     z-index: 4;
     left: -240px;
@@ -49,8 +50,7 @@ body.disclose div[class^="membersWrap"] {
     -webkit-transition: right ease-in-out 300ms;
     transition: right ease-in-out 300ms;
 }
-body.mouse-active .wrapper-1Rf91z,
-body.mouse-active div[class^="wrapper"] div[class*="scrollerWrapPolyfill"] {
+body.mouse-active div[class*="wrapper"][class*="guilds"] {
     position: fixed;
     left: 0;
     height: 100%;
@@ -61,9 +61,9 @@ body.mouse-active div[class^="wrapper"] div[class*="scrollerWrapPolyfill"] {
     -webkit-transition: left ease-in-out 300ms;
     transition: left ease-in-out 300ms;
 }
-body.mouse-active div[class^="channels"] {
+body.mouse-active div[class^="sidebar"] {
     position: fixed;
-    left: 70px;
+    left: 0px;
     height: 100%;
     z-index: 4;
     width: 240px;
@@ -88,9 +88,9 @@ body.disclose div[class*="iconWrapper"][class*="clickable"][class*="selected"] {
     display: none !important;
 }
 body:not(.disclose):not(.mouse-moving) div[class^="membersWrap"],
-body:not(.reveal):not(.mouse-active) div[class^="wrapper"]
-body:not(.reveal):not(.mouse-active) div[class^="wrapper"] div[class*="scrollerWrapPolyfill"],
-body:not(.reveal):not(.mouse-active) div[class^="channels"] {
+body:not(.reveal):not(.mouse-active) div[class*="wrapper"][class*="guilds"],
+body:not(.reveal):not(.mouse-active) div[class*="sidebar"] {
+    height: 100%;
     margin-top: 0 !important;
     position: initial;
 }
