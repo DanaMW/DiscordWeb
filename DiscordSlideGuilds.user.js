@@ -17,6 +17,7 @@ var injCSS = `/* CSS STUFF */
 div[class^=title][class*="container"] {
    z-index: 0;
 }
+body.reveal div[class*="wrapper"][class*="guilds"]>div>div[class*="scrollerWrapPolyfill"],
 body.reveal div[class*="wrapper"][class*="guilds"] {
     position: fixed;
     height: 100%;
@@ -50,6 +51,7 @@ body.disclose div[class^="membersWrap"] {
     -webkit-transition: right ease-in-out 300ms;
     transition: right ease-in-out 300ms;
 }
+body.mouse-active div[class*="wrapper"][class*="guilds"]>div>div[class*="scrollerWrapPolyfill"],
 body.mouse-active div[class*="wrapper"][class*="guilds"] {
     position: fixed;
     left: 0;
@@ -88,6 +90,7 @@ body.disclose div[class*="iconWrapper"][class*="clickable"][class*="selected"] {
     display: none !important;
 }
 body:not(.disclose):not(.mouse-moving) div[class^="membersWrap"],
+body:not(.reveal):not(.mouse-active) div[class*="wrapper"][class*="guilds"]>div>div[class*="scrollerWrapPolyfill"],
 body:not(.reveal):not(.mouse-active) div[class*="wrapper"][class*="guilds"],
 body:not(.reveal):not(.mouse-active) div[class*="sidebar"] {
     height: 100%;
