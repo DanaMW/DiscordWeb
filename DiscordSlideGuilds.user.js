@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         DiscordSlideGuilds
-// @version      0.0.28
+// @version      0.0.29
 // @namespace    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
 // @description  Slides the channel, guildes and Member lists in and out on hover.
@@ -17,7 +17,7 @@ var injCSS = `/* CSS STUFF */
 div[class^=title][class*="container"] {
    z-index: 0;
 }
-body.reveal div[class*="wrapper"][class*="guilds"]>div>div[class*="scrollerWrapPolyfill"],
+body.reveal div[class*="wrapper"][class*="guilds"] div>div[class*="scrollerWrapPolyfill"],
 body.reveal div[class*="wrapper"][class*="guilds"] {
     position: fixed;
     height: 100%;
@@ -32,11 +32,19 @@ body.reveal div[class*="wrapper"][class*="guilds"] {
 body.reveal div[class^="sidebar"] {
     position: fixed;
     height: 100%;
-    left: 0px;
-    margin-left: -70px;
+    left: -70px;
     width: 240px;
     z-index: 4;
     left: -240px;
+    -moz-transition: left ease-in-out 300ms;
+    -webkit-transition: left ease-in-out 300ms;
+    transition: left ease-in-out 300ms;
+}
+body.reveal div[class*="base"] {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0px;
     -moz-transition: left ease-in-out 300ms;
     -webkit-transition: left ease-in-out 300ms;
     transition: left ease-in-out 300ms;
@@ -51,7 +59,7 @@ body.disclose div[class^="membersWrap"] {
     -webkit-transition: right ease-in-out 300ms;
     transition: right ease-in-out 300ms;
 }
-body.mouse-active div[class*="wrapper"][class*="guilds"]>div>div[class*="scrollerWrapPolyfill"],
+body.mouse-active div[class*="wrapper"][class*="guilds"] div>div[class*="scrollerWrapPolyfill"],
 body.mouse-active div[class*="wrapper"][class*="guilds"] {
     position: fixed;
     left: 0;
@@ -73,6 +81,14 @@ body.mouse-active div[class^="sidebar"] {
     -webkit-transition: left ease-in-out 300ms;
     transition: left ease-in-out 300ms;
 }
+body.mouse-active div[class*="base"] {
+    position: fixed;
+    height: 100%;
+    width: initial;
+    -moz-transition: left ease-in-out 300ms;
+    -webkit-transition: left ease-in-out 300ms;
+    transition: left ease-in-out 300ms;
+}
 body.mouse-moving div[class^="membersWrap"] {
     position: fixed;
     right: 0px;
@@ -90,7 +106,7 @@ body.disclose div[class*="iconWrapper"][class*="clickable"][class*="selected"] {
     display: none !important;
 }
 body:not(.disclose):not(.mouse-moving) div[class^="membersWrap"],
-body:not(.reveal):not(.mouse-active) div[class*="wrapper"][class*="guilds"]>div>div[class*="scrollerWrapPolyfill"],
+body:not(.reveal):not(.mouse-active) div[class*="wrapper"][class*="guilds"]>div div[class*="scrollerWrapPolyfill"],
 body:not(.reveal):not(.mouse-active) div[class*="wrapper"][class*="guilds"],
 body:not(.reveal):not(.mouse-active) div[class*="sidebar"] {
     height: 100%;
