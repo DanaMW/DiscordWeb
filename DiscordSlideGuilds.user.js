@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         DiscordSlideGuilds
-// @version      0.0.29
+// @version      0.0.30
 // @namespace    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
 // @description  Slides the channel, guildes and Member lists in and out on hover.
@@ -73,7 +73,7 @@ body.mouse-active div[class*="wrapper"][class*="guilds"] {
 }
 body.mouse-active div[class^="sidebar"] {
     position: fixed;
-    left: 0px;
+    left: 70px;
     height: 100%;
     z-index: 4;
     width: 240px;
@@ -84,6 +84,7 @@ body.mouse-active div[class^="sidebar"] {
 body.mouse-active div[class*="base"] {
     position: fixed;
     height: 100%;
+    left: 70px;
     width: initial;
     -moz-transition: left ease-in-out 300ms;
     -webkit-transition: left ease-in-out 300ms;
@@ -108,6 +109,7 @@ body.disclose div[class*="iconWrapper"][class*="clickable"][class*="selected"] {
 body:not(.disclose):not(.mouse-moving) div[class^="membersWrap"],
 body:not(.reveal):not(.mouse-active) div[class*="wrapper"][class*="guilds"]>div div[class*="scrollerWrapPolyfill"],
 body:not(.reveal):not(.mouse-active) div[class*="wrapper"][class*="guilds"],
+/*body:not(.reveal):not(.mouse-active) div[class*="base"],*/
 body:not(.reveal):not(.mouse-active) div[class*="sidebar"] {
     height: 100%;
     margin-top: 0 !important;
