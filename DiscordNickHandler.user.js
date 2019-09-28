@@ -2,7 +2,7 @@
 // @name         DiscordNickHandler
 // @namespace    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordNickHandler.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordNickHandler.user.js
-// @version      0.0.13
+// @version      0.0.14
 // @description  Nick Change And Color
 // @author       Dana Meli
 // @icon         https://danamw.github.io/img/eyeball128.png
@@ -34,6 +34,25 @@ var nickCol = {
 };
 
 $(document).arrive('span[class^="username"]', function() {
+    var $newElem = $(this);
+    var notNick = $(this).text();
+
+    if (nickNew[notNick] != null) {
+        var isNick = nickNew[notNick];
+        $newElem.text(isNick);
+    }
+    if ($.inArray(notNick, nickFriend) != -1) {
+        $newElem.attr('style', 'color: blue !important;');
+    }
+    if ($.inArray(notNick, nickMine) != -1) {
+        $newElem.attr('style', 'color: red !important;');
+    }
+    if (nickCol[notNick] != null) {
+        var isCol = nickCol[notNick];
+        $newElem.attr('style', 'color: ' + isCol + ' !important;');
+    }
+});
+$(document).arrive('span[class^="RoleColor"]', function() {
     var $newElem = $(this);
     var notNick = $(this).text();
 
