@@ -3,7 +3,7 @@
 // @namespace    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSendButton.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSendButton.user.js
 // @description  Adds a Send button in the Web discord.
-// @version      0.0.20
+// @version      0.0.21
 // @icon         https://danamw.github.io/img/eyeball128.png
 // @author       Dana Meli
 // @author       zerebos
