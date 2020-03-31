@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Discord Slide Guilds
-// @version      0.0.33
+// @version      0.0.35
 // @namespace    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
 // @description  Slides the channel, guildes and Member lists in and out on hover.
@@ -154,18 +154,20 @@ function main() {
     }
 }
 
-function blockRequest(e) {
-    return {
-        cancel: e.url.endsWith("/typing")
-    };
-}
-browser.webRequest.onBeforeRequest.addListener(
-    blockRequest, {
-        urls: ["https://discordapp.com/api/*"]
-    }, [
-        "blocking"
-    ]
-);
+// $(document).ready(
+//     function blockRequest(e) {
+//        return {
+//            cancel: e.url.endsWith("/typing")
+//        };
+//    }
+//    browser.webRequest.onBeforeRequest.addListener(
+//        blockRequest, {
+//            urls: ["https://discordapp.com/api/*"]
+//        }, [
+//            "blocking"
+//        ]
+//    );
+// );
 
 $(document).on('click', '#btn-slide', (function() {
     $('body').toggleClass('reveal');
