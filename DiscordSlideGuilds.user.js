@@ -13,7 +13,7 @@
 /* jshint esversion: 6 */
 /* require-jsdoc  */
 
-var injCSS = ` /* CSS STUFF */
+var injCSS = `
 div[class^=title][class*="container"] {
    z-index: 0;
 }
@@ -154,20 +154,20 @@ function main() {
     }
 }
 
-
-// $(document).ready(    function blockRequest(e) {
-//       return {
-//           cancel: e.url.endsWith("/typing")
-//       };
+// $(document).ready(
+//    function blockRequest(e) {
+//        return {
+//            cancel: e.url.endsWith("/typing")
+//        };
 //    }
-//   browser.webRequest.onBeforeRequest.addListener(
-//       blockRequest, {
-//           urls: ["https://discordapp.com/api/*"]
-//       }, [
-//           "blocking"
-//       ]
-//    );
-// );
+//    browser.webRequest.onBeforeRequest.addListener(
+//        blockRequest, {
+//            urls: ["https://discordapp.com/api/*"]
+//        }, [
+//            "blocking"
+//        ]
+//    )
+// )
 
 $(document).on('click', '#btn-slide', (function() {
     $('body').toggleClass('reveal');
