@@ -2,7 +2,7 @@
 // @name         DiscordNickHandler
 // @namespace    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordNickHandler.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordNickHandler.user.js
-// @version      0.0.18
+// @version      0.0.19
 // @description  Nick Change And Color
 // @author       Dana Meli
 // @icon         https://danamw.github.io/img/eyeball128.png
@@ -13,7 +13,6 @@
 // ==/UserScript==
 /* jshint esversion: 6 */
 /* eslint-disable require-jsdoc */
-
 // json.stringify store json.parse retrieve
 var nickNew = {};
 var nickNew = {
@@ -29,7 +28,9 @@ var nickMine = ['Dana', 'DanaMW', 'Cog', 'Cognizant'];
 var nickCol = {};
 var nickCol = {
     'Sicuro': 'red',
+    'DragonSlayer': 'red',
     '𝕲𝖗𝖎𝖒': 'purple',
+    'Saggio': 'purple',
     'kinghat': 'yellow',
     'Fifi': 'green'
 };

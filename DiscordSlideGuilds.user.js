@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Discord Slide Guilds
-// @version      0.0.38
+// @version      0.0.39
 // @namespace    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
 // @description  Slides the channel, guilds and Member lists in and out on hover.
@@ -12,7 +12,6 @@
 // ==/UserScript==
 /* jshint esversion: 6 */
 /* require-jsdoc  */
-
 var injCSS = `
 div[class^=title][class*="container"] {
    z-index: 0;

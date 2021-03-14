@@ -2,18 +2,17 @@
 // @name         DiscordSendButton
 // @namespace    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSendButton.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSendButton.user.js
-// @description  Adds a Send button in the Web discord.
-// @version      0.0.24
+// @description  Adds a Enter (Send text) button in the Web discord.
+// @version      0.0.25
 // @icon         https://danamw.github.io/img/eyeball128.png
 // @author       Dana Meli
-// @author       zerebos
+// @author       zerebos (Author of the better discord version)
 // @include      /https?://discord\.com/channels/*/
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
 // @require      https://raw.githubusercontent.com/uzairfarooq/arrive/master/minified/arrive.min.js
 // ==/UserScript==
 /* jshint esversion: 6 */
 /* require-jsdoc  */
-
 $(document).on('click', '#clear-text', (function() {
     $('span[data-slate-string="true"]').val('').text('');
     $(document).on('keydown.preventSend', function(e) {
@@ -31,7 +30,6 @@ $(document).on('click', '#clear-text', (function() {
         }
     });
 }));
-
 $(document).on('click', '#submit-text', (function(event) {
     if ($('span[data-slate-string="true"]').val() === '') {
         return;
@@ -55,7 +53,6 @@ $(document).on('click', '#submit-text', (function(event) {
     });
     textarea[0].dispatchEvent(press);
 }));
-
 $(document).arrive('div[class*="channelTextArea"][class*="channelTextArea"]', function() {
     var noBtn1 = $('#submit-text').length == 0;
     if (noBtn1) {
