@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Discord Slide Guilds
-// @version      0.0.39
+// @version      0.0.40
 // @namespace    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
 // @description  Slides the channel, guilds and Member lists in and out on hover.
@@ -83,8 +83,7 @@ body.mouse-active div[class^="sidebar"] {
 body.mouse-active div[class*="base"] {
     position: fixed;
     height: 100%;
-    left: 70px;
-    width: initial;
+    width: 100%;
     -moz-transition: left ease-in-out 300ms;
     -webkit-transition: left ease-in-out 300ms;
     transition: left ease-in-out 300ms;
