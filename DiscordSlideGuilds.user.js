@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Discord Slide Guilds
-// @version      0.0.40
+// @version      0.0.41
 // @namespace    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
 // @description  Slides the channel, guilds and Member lists in and out on hover.
@@ -48,7 +48,7 @@ body.reveal div[class*="base"] {
     -webkit-transition: left ease-in-out 300ms;
     transition: left ease-in-out 300ms;
 }
-body.disclose div[class^="membersWrap"] {
+body.disclose aside[class^="membersWrap"] {
     position: fixed;
     height: 100%;
     width: 240px;
@@ -88,7 +88,7 @@ body.mouse-active div[class*="base"] {
     -webkit-transition: left ease-in-out 300ms;
     transition: left ease-in-out 300ms;
 }
-body.mouse-moving div[class^="membersWrap"] {
+body.mouse-moving aside[class^="membersWrap"] {
     position: fixed;
     right: 0px;
     height: 100%;
@@ -104,7 +104,7 @@ body.reveal div[class*="iconWrapper"][class*="clickable"][class*="selected"],
 body.disclose div[class*="iconWrapper"][class*="clickable"][class*="selected"] {
     display: none !important;
 }
-body:not(.disclose):not(.mouse-moving) div[class^="membersWrap"],
+body:not(.disclose):not(.mouse-moving) aside[class^="membersWrap"],
 body:not(.reveal):not(.mouse-active) div[class*="wrapper"][class*="guilds"]>div>div[class*="scrollerWrapPolyfill"],
 body:not(.reveal):not(.mouse-active) nav[class*="wrapper"][class*="guilds"],
 /*body:not(.reveal):not(.mouse-active) div[class*="base"],*/
