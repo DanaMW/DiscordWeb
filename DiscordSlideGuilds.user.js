@@ -1,7 +1,8 @@
 // ==UserScript==
 // @name         Discord Slide Guilds
-// @version      0.0.41
+// @version      0.0.42
 // @namespace    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
+// @downloadURL  https://github.com/DanaMW/DiscordWeb/raw/master/DiscordSlideGuilds.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
 // @description  Slides the channel, guilds and Member lists in and out on hover.
 // @author       Dana Meli

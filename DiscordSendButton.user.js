@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         DiscordSendButton
 // @namespace    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSendButton.user.js
+// @downloadURL  https://github.com/DanaMW/DiscordWeb/raw/master/DiscordSendButton.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSendButton.user.js
 // @description  Adds a Enter (Send text) button in the Web discord.
-// @version      0.0.26
+// @version      0.0.27
 // @icon         https://danamw.github.io/img/eyeball128.png
 // @author       Dana Meli
 // @author       zerebos (Author of the better discord version)
