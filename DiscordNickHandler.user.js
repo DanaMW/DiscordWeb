@@ -3,13 +3,13 @@
 // @namespace    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordNickHandler.user.js
 // @downloadURL  https://github.com/DanaMW/DiscordWeb/raw/master/DiscordNickHandler.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordNickHandler.user.js
-// @version      0.0.20
+// @version      0.0.21
 // @description  Nick Change And Color
 // @author       Dana Meli
 // @icon         https://danamw.github.io/img/eyeball128.png
 // @grant        none
 // @include      /https?://discord\.com/channels/*/
-// @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
+// @require      https://code.jquery.com/jquery-3.6.0.min.js
 // @require      https://raw.githubusercontent.com/uzairfarooq/arrive/master/minified/arrive.min.js
 // ==/UserScript==
 /* jshint esversion: 6 */

@@ -4,11 +4,11 @@
 // @downloadURL  https://github.com/DanaMW/DiscordWeb/raw/master/DiscordCopyCodeButton.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordCopyCodeButton.user.js
 // @description  On click adds a Copy button to code blocks pasted in the channel.
-// @version      0.0.24
+// @version      0.0.25
 // @author       Dana Meli
 // @icon         https://danamw.github.io/img/eyeball128.png
 // @include      /https?://discord\.com/channels/*/
-// @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
+// @require      https://code.jquery.com/jquery-3.6.0.min.js
 // @require      https://raw.githubusercontent.com/uzairfarooq/arrive/master/minified/arrive.min.js
 // @grant        GM_addStyle
 // ==/UserScript==

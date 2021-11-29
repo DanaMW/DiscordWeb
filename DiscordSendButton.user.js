@@ -4,12 +4,12 @@
 // @downloadURL  https://github.com/DanaMW/DiscordWeb/raw/master/DiscordSendButton.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSendButton.user.js
 // @description  Adds a Enter (Send text) button in the Web discord.
-// @version      0.0.27
+// @version      0.0.28
 // @icon         https://danamw.github.io/img/eyeball128.png
 // @author       Dana Meli
 // @author       zerebos (Author of the better discord version)
 // @include      /https?://discord\.com/channels/*/
-// @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
+// @require      https://code.jquery.com/jquery-3.6.0.min.js
 // @require      https://raw.githubusercontent.com/uzairfarooq/arrive/master/minified/arrive.min.js
 // ==/UserScript==
 /* jshint esversion: 6 */
