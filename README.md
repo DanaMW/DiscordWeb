@@ -16,6 +16,9 @@ The guilds, channels and users lists slide in\out on hover.
 ## Discord Send Button <a href="https://github.com/DanaMW/DiscordWeb/raw/master/DiscordSendButton.user.js" class="button"><img src="/img/icon32.png"></a>
 
 ```
+Skip this one for a second the enter stopped working.
+I will remove this message when I update it...
+
 Install this script and you have a send (text) button
 in the text input of the chat window.
 
