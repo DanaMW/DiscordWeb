@@ -40,4 +40,4 @@ And it has a friends color nick (sort of the same).
 Edit the script directly to add or remove nicknames or colors.
 1-java
 ```
-`@author Dana Meli`
+`@author Dana L. Meli-Wischman`
