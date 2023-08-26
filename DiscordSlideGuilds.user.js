@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Discord Slide Guilds
-// @version      0.0.47
+// @version      0.0.48
 // @namespace    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
 // @downloadURL  https://github.com/DanaMW/DiscordWeb/raw/master/DiscordSlideGuilds.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
@@ -138,7 +138,7 @@ body:not(.reveal):not(.mouse-active) div[class*="sidebar"] {
 function main() {
     var noBtn = $('#btn-slide').length == 0;
     if (noBtn) {
-        $('section[class*="title"][class*="upperContainer"]').each(function() {
+        $('section[class*="title"]>[class*="upperContainer"]').each(function() {
             $('<button>', {
                 id: 'btn-slide',
                 class: 'btn-slide',
