@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Discord Slide Guilds
-// @version      0.0.51
+// @version      0.0.52
 // @namespace    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
 // @downloadURL  https://github.com/DanaMW/DiscordWeb/raw/master/DiscordSlideGuilds.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
@@ -90,8 +90,7 @@ body.mouse-active div[class*="base"] {
     -webkit-transition: left ease-in-out 300ms;
     transition: left ease-in-out 300ms;
 }
-body.mouse-moving aside[class^="membersWrap"],
-body.mouse-moving div[class=*"container"] {
+body.mouse-moving aside[class^="membersWrap"] {
     position: fixed;
     right: 0px;
     height: 100%;
