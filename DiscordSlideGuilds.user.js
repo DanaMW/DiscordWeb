@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Discord Slide Guilds
-// @version      0.0.50
+// @version      0.0.51
 // @namespace    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
 // @downloadURL  https://github.com/DanaMW/DiscordWeb/raw/master/DiscordSlideGuilds.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
@@ -50,8 +50,7 @@ body.reveal div[class*="base"] {
     transition: left ease-in-out 300ms;
 }
 
-body.disclose aside[class^="membersWrap"],
-body.disclose div[class*="chat"]>div[class=*"content"]>div[class=*"container"]>div[class=*"container"] {
+body.disclose aside[class^="membersWrap"] {
     position: fixed;
     height: 100%;
     width: 240px;
@@ -92,7 +91,7 @@ body.mouse-active div[class*="base"] {
     transition: left ease-in-out 300ms;
 }
 body.mouse-moving aside[class^="membersWrap"],
-body.mouse-moving div[class*="chat"]>div[class=*"content"]>div[class=*"container"]>div[class=*"container"] {
+body.mouse-moving div[class=*"container"] {
     position: fixed;
     right: 0px;
     height: 100%;
@@ -109,7 +108,6 @@ body.disclose div[class*="iconWrapper"][class*="clickable"][class*="selected"] {
     display: none !important;
 }
 body:not(.disclose):not(.mouse-moving) aside[class^="membersWrap"],
-body:not(.disclose):not(.mouse-moving div[class*="chat"]>div[class=*"content"]>div[class=*"container"]>div[class=*"container"],
 body:not(.reveal):not(.mouse-active) div[class*="wrapper"][class*="guilds"]>div>div[class*="scrollerWrapPolyfill"],
 body:not(.reveal):not(.mouse-active) nav[class*="wrapper"][class*="guilds"],
 /*body:not(.reveal):not(.mouse-active) div[class*="base"],*/
