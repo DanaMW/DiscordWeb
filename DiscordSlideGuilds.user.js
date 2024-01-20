@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Discord Slide Guilds
-// @version      0.0.52
+// @version      0.0.53
 // @namespace    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
 // @downloadURL  https://github.com/DanaMW/DiscordWeb/raw/master/DiscordSlideGuilds.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/discordweb/master/DiscordSlideGuilds.user.js
@@ -109,7 +109,6 @@ body.disclose div[class*="iconWrapper"][class*="clickable"][class*="selected"] {
 body:not(.disclose):not(.mouse-moving) aside[class^="membersWrap"],
 body:not(.reveal):not(.mouse-active) div[class*="wrapper"][class*="guilds"]>div>div[class*="scrollerWrapPolyfill"],
 body:not(.reveal):not(.mouse-active) nav[class*="wrapper"][class*="guilds"],
-/*body:not(.reveal):not(.mouse-active) div[class*="base"],*/
 body:not(.reveal):not(.mouse-active) div[class*="sidebar"] {
     height: 100%;
     margin-top: 0 !important;
